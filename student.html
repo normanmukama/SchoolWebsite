@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .modal-body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+      <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">St PaulSchool</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curriculum.html">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="student.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admission.html">Admissions</a>
+          </li>
+          <div class="nav-item">
+            <a href="academic.html" class="nav-link">Academics</a>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h4 class="text-center text-primary my-3">School Gallery</h4>
+    <p class="text-center"><strong>Here are some of the photos of our students taken both inside and outside the school.</strong></p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/img_2.jpg" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+              data-image="image1.jpg" data-title="Image description">View</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/img_1.jpg" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+              data-image="image2.jpg" data-title="Image description">View</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/img_3.jpg" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Image 3</h5> -->
+            <!-- <p class="card-text">Description of Image 3</p> -->
+            <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+              data-image="image3.jpg" data-title="Image Description">View</button>
+          </div>
+        </div>
+      </div>
+      <!-- Add more image cards here -->
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/sp2.jpg" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image1.jpg" data-title="Image description">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/library.jpg" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image2.jpg" data-title="Image description">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/school1.jpeg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Image 3</h5> -->
+              <!-- <p class="card-text">Description of Image 3</p> -->
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image3.jpg" data-title="Image Description">View</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more image cards here -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/img_5.jpg" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image1.jpg" data-title="Image description">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/sp3.jpg" class="card-img-top" alt="Image 2">
+            <div class="nav-item">
+            <a href="academic.html" class="nav-link">Academics</a>
+          </div>
+            <div class="card-body">
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image2.jpg" data-title="Image description">View</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/img_3.jpg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Image 3</h5> -->
+              <!-- <p class="card-text">Description of Image 3</p> -->
+              <button class="btn btn-primary view-btn" data-toggle="modal" data-target="#imageModal"
+                data-image="image3.jpg" data-title="Image Description">View</button>
+            </div>
+          </div>
+        </div>
+        <!-- Add more image cards here -->
+      </div>
+  </div>
+
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-section bg-dark text-light pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <p><strong>About St Paul School</strong></p>
+          <p>a leading educational institution dedicated to providing quality education and nurturing young minds.
+            With a rich history spanning over ten years.
+          </p>
+        </div>
+
+        <div class="col-md-3 ml-auto">
+          <p><strong>Links</strong></p>
+          <ul class="list-unstyled footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <p><strong>Subscribe</strong></p>
+          <p>
+            You can subscribe to our website to get updates happening within our school community and outside as well.
+          </p>
+          <form action="#" class="footer-subscribe">
+            <div class="d-flex mb-5">
+              <input type="text" class="form-control rounded-0" placeholder="Email">
+              <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  </footer>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2023 St PaulSchool. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // Add click event listener to view buttons
+    const viewButtons = document.querySelectorAll('.view-btn');
+    viewButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const image = e.target.dataset.image;
+        const title = e.target.dataset.title;
+        const modalTitle = document.getElementById('imageModalLabel');
+        const modalImage = document.querySelector('.modal-body img');
+
+        modalTitle.textContent = title;
+        modalImage.src = image;
+      });
+    });
+  </script>
+</body>
+
+</html>
